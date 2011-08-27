@@ -1,0 +1,89 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010 Mark Liu (markwayneliu@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper]{moderncv}
+
+\usepackage{verbatim}
+
+% moderncv themes
+%\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+% personal data
+\firstname{Prashant}
+\familyname{Kumar}
+%\address{Mithramadhom}{Hari Hara Iyer Road}{Perumbavoor-683542}    % optional, remove the line if not wanted
+\mobile{+91-9746113031}                                             % optional, remove the line if not wanted
+\email{contactprashantat@gmail.com}                                 % optional, remove the line if not wanted
+\homepage{http://pkumar.bitbucket.org}                              % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Career Objective}
+\cvline{}{To seek a career in the field of engineering with good technical and interpersonal skills and thereby contribute to existing technologies for the benefit of common good.}
+
+
+\section{Education}
+\cventry{Graduation}{B. Tech, Information Technology}{Amrita School Of Engineering, Amritapuri}{Kollam, Kerala}{}{}
+\cvline{GPA:}{\small 7.2/10.0}
+
+
+\section{Experience}
+\cventry{2011--Present}{Intern}{Google(GSoC)}{Pytest2 Migration for MoinMoin and Test Improvements}{}{
+Worked on reimplementing all the tests of MoinMoin over to pytest2
+including the improvement of test coverage by writing new tests. The task also consisted of 
+making the tests faster and better.
+}
+
+\cventry{2011}{Student}{Amrita School Of Engineering}{Mixed Reality}{}{
+Worked on creating a virtual university system with a collaboration of video conferencing
+using flex as platform and tools like Alternativa3D and Maya.
+}
+
+\cventry{2011}{Service author}{InCTF}{HoneyFTP}{}{
+Contributed in writing vulnerable service for a nation-wide CTF contest which mimicked the behaviour of vsftpd 2.2.2. The intended
+vulnerabilites the service had were remote command execution and SQLi.
+}
+
+\cventry{2010-present}{Open-Source Developer}{ConfigObj, Distutils2}{}{}{
+Contributed in the porting of Configobj and distutils2 over to python 3.1. Also, worked on distutils2-porting remotely during a pycon sprint(Pycon 2011).
+}
+
+\section{Technical Experience}
+\subsection{Proficient With}
+\cvline{languages}{Python, C, C++, Bash}
+\cvline{operating systems}{Windows, Linux(Ubuntu, Fedora, Red Hat)}
+\cvline{technologies}{mercurial, git, vim, wireshark, MySQL}
+
+\subsection{Have Experience With}
+\cvline{languages}{Java}
+\cvline{technologies}{Apache, DB2, MySQL, vsftpd, Glassfish, Flex, Alternativa3D}
+
+}
+
+\end{document}
